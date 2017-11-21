@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 101px;
+  width: 100%;
+  background-color: #9e005d;
+  display: block;
+  top: 0;
+  left: 0;
+}
+header .logo1 {
+  display: block;
+  width: 89px;
+  height: 85px;
+  float: left;
+  margin-left: 262px;
+  margin-top: 8px;
+}
+header nav {
+  margin-left: 592px;
+}
+header li a {
+  display: block;
+  float: left;
+  line-height: 16px;
+  color: #fff;
+  margin: 42px 38px 0 0;
+}
+header .lastChild {
+  margin-right: 0;
+}
+header .tel {
+  display: block;
+  color: #fff;
+}
+header .tel img {
+  display: block;
+  margin: 32px 0 0 56px;
+  float: left;
+}
+header .tel div {
+  font-size: 24px;
+  line-height: 32px;
+  float: left;
+  padding-left: 15px;
+  margin-top: 32px;
+}
