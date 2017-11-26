@@ -24,8 +24,10 @@
 	margin-top: -3px;
 }
 
-.view_box:last-child {
+.view_box:nth-child(2) {
 	margin-right: 0;
+	box-sizing: border-box;
+	padding-top: 80px;
 }
 
 .view_box:first-child {
@@ -40,12 +42,15 @@
 	position: absolute;
 }
 
-.view_box:first-child a {
+.view_box a {
 	display: block;
 	position: absolute;
 	width: 544px;
 	height: 330px;
 	z-index: 2;
+}
+
+.view_box:first-child a {
 	margin-left: -30px;
 	margin-top: -50px;
 }
@@ -65,6 +70,15 @@
 	margin-left: 172px;
 }
 
-.wrapper {
-	padding: 100px 0 0 100px;
+.img_video {
+	width: 544px;
+	position: absolute;
+}
+
+.view_box:hover:nth-child(2) img {
+	box-shadow: 3px 3px 5px 0 #777;
+}
+
+.view_box:hover:nth-child(2) {
+	margin-top: -3px;
 }
