@@ -8,6 +8,12 @@ ul {
 a {
   text-decoration: none;
 }
+.wrapper1 {
+  width: 1700px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #9e005d;
+}
 header {
   height: 101px;
   width: 100%;
@@ -21,18 +27,17 @@ header .logo1 {
   width: 89px;
   height: 85px;
   float: left;
-  margin-left: 262px;
   margin-top: 8px;
 }
 header nav {
-  margin-left: 592px;
+  margin-left: 450px;
 }
 header li a {
   display: block;
   float: left;
   line-height: 16px;
   color: #fff;
-  margin: 42px 38px 0 0;
+  margin: 42px 25px 0 0;
 }
 header .lastChild {
   margin-right: 0;
@@ -43,7 +48,7 @@ header .tel {
 }
 header .tel img {
   display: block;
-  margin: 32px 0 0 56px;
+  margin: 32px 0 0 250px;
   float: left;
 }
 header .tel div {
@@ -52,4 +57,129 @@ header .tel div {
   float: left;
   padding-left: 15px;
   margin-top: 32px;
+}
+/*main{
+	width: 100%;
+}*/
+.wrapper2 {
+  width: 1700px;
+  margin: 0 auto;
+}
+.look_video {
+  z-index: 1;
+  clear: both;
+  height: 956px;
+  width: 100%;
+  position: relative;
+}
+.look_video .video {
+  margin: 0 auto;
+  display: block;
+  width: 1700px;
+}
+.look_video .play {
+  position: absolute;
+  top: 600px;
+  margin-left: 826px;
+}
+.about_us {
+  position: relative;
+  z-index: 2;
+  margin: -150px auto 0 auto;
+  height: 787px;
+  display: block;
+  width: 1700px;
+  background-color: #fff;
+}
+.about_us .img1 {
+  margin-left: 264px;
+  margin-top: 102px;
+  display: block;
+  float: left;
+}
+.about_us .img2 {
+  display: block;
+  float: left;
+  margin: 31px 21px 0 52px;
+}
+.about_us .why_we {
+  float: left;
+  margin-top: 42px;
+  width: 900px;
+}
+.about_us .why_we h2 {
+  font-size: 30px;
+}
+.about_us .why_we .question {
+  font-size: 48px;
+  font-weight: 900;
+  color: #9e005d;
+}
+.about_us .reason1 {
+  clear: both;
+  width: 400px;
+  float: left;
+  margin-left: 250px;
+  margin-top: 45px;
+}
+.about_us .reason1 img {
+  display: block;
+  margin: 0 auto;
+}
+.about_us .reason1 div {
+  text-align: center;
+  margin-top: 35px;
+  color: #9e005d;
+}
+.about_us .reason2 {
+  width: 400px;
+  float: left;
+  margin-top: 45px;
+}
+.about_us .reason2 img {
+  display: block;
+  margin: 0 auto;
+}
+.about_us .reason2 div {
+  text-align: center;
+  margin-top: 35px;
+  color: #9e005d;
+}
+.about_us .reason3 {
+  width: 400px;
+  float: left;
+  margin-top: 45px;
+}
+.about_us .reason3 img {
+  display: block;
+  margin: 0 auto;
+}
+.about_us .reason3 div {
+  text-align: center;
+  margin-top: 35px;
+  color: #9e005d;
+}
+.concerts {
+  margin: 0 auto;
+  width: 1700px;
+  height: 960px;
+  background: url('../library/images/service/concerts.jpg');
+  font-size: 30px;
+  text-align: center;
+}
+.organizer {
+  width: 1700px;
+  height: 366px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  background-color: #662d91;
+}
+footer {
+  width: 1700px;
+  height: 1450px;
+  margin: 0 auto;
+  background-color: #9e005d;
+  text-align: center;
+  font-size: 30px;
 }

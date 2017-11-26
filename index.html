@@ -3,34 +3,119 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Главная</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css?vers1.1">
 </head>
 <body>
 	<header>
-		<!--Add logo-->
-		<a href="index.html" class="logo1">
-			<img src="library/images/service/logo.png"
-        	width="89"
-        	height="85">
-        </a>
-        <!--Add menu-->
-        <nav>
-        	<ul>
-        		<li><a href="#">О ПРОЕКТЕ</a></li>
-        		<li><a href="#">НОВОСТИ</a></li>
-        		<li><a href="#">ВЫСТУПЛЕНИЯ</a></li>
-        		<li><a href="#" class="lastChild">КОНТАКТЫ</a></li>
-        	</ul>
-        </nav>
-        <!--Add phone number-->
-        <a href="#" class="tel">
-        	<img src="library/images/service/tel.png"
-        	width="31"
-        	height="32">
-        	<div>+7 (925) 655 71 90</div>
-        </a>
+		<div class="wrapper1">
+			<!--Add logo-->
+			<a href="index.html" class="logo1">
+				<img src="library/images/service/logo.png"
+	        	width="89"
+	        	height="85">
+	        </a>
+	        <!--Add menu-->
+	        <nav>
+	        	<ul>
+	        		<li><a href="#">ГЛАВНАЯ</a></li>
+	        		<li><a href="#">О ПРОЕКТЕ</a></li>
+	        		<li><a href="#">НОВОСТИ</a></li>
+	        		<li><a href="#">ВЫСТУПЛЕНИЯ</a></li>
+	        		<li><a href="#">ГАЛЕРЕЯ</a></li>
+	        		<li><a href="#">ОТЗЫВЫ</a></li>
+	        		<li><a href="#" class="lastChild">КОНТАКТЫ</a></li>
+	        	</ul>
+	        </nav>
+	        <!--Add phone number-->
+	        <a href="#" class="tel">
+	        	<img src="library/images/service/tel.png"
+	        	width="31"
+	        	height="32">
+	        	<div>+7 (925) 655 71 90</div>
+	        </a>
+	    </div>
 	</header>
-	
+	<main>
+		<!--Add video-->
+		<section class="look_video">
+			<div class="wrapper2">
+				<video class="video" poster="library/images/service/poster.png">
+					<source src="Go_Brass.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				</video>
+
+				<div class="play">
+					<a href="#">
+						<img src="library/images/service/play.png"
+						width="48"
+						height="48">
+					</a>
+				</div>
+			</div>
+		</section>
+		<!--Add content-->
+		<section class="about_us">
+			<img class="img1" src="library/images/service/5man.png"
+			width="408"
+			height="366">
+			<img class="img2" src="library/images/service/truba.png"
+			width="50"
+			height="53">
+			<div class="why_we">
+				<h2>О ПРОЕКТЕ</h2><br><br><br>
+				<div class="question">ПОЧЕМУ НАС<br>
+				ВЫБИРАЮТ?</div><br>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non numquam vel est neque, quo nobis quas illo delectus, eum molestias mollitia sit dolore aperiam doloribus, pariatur praesentium facilis corrupti illum libero magni quae asperiores. Quisquam dicta omnis placeat, repellendus harum voluptatem numquam! Aperiam excepturi, quam corporis delectus, minima quod ducimus dolore porro doloribus vel voluptas ipsam hic.
+				</p>
+			</div>
+			<br>
+			<div class="reason1">
+				<img src="library/images/service/icon_1.png"
+				width="151"
+				height="151">
+				<div>
+					Уникальные программы<br>
+					и фееричные выступления
+				</div>
+			</div>
+			<div class="reason2">
+				<img src="library/images/service/icon_2.png"
+				width="151"
+				height="151">
+				<div>
+					Сплоченная команда<br>
+					профессионалов
+				</div>
+			</div>
+			<div class="reason3">
+				<img src="library/images/service/icon_3.png"
+				width="151"
+				height="151">
+				<div>
+					Огромный опыт фестивальной<br>
+					и концертной деятельности
+				</div>
+			</div>
+				
+		</section>
+		<!--Add concerts-->
+		<section class="concerts">
+			ВЫСТУПЛЕНИЯ
+		</section>
+		<!--Add to organizers-->
+		<section class="organizer">
+			ОРГАНИЗАТОРАМ
+		</section>
+
+
+	</main>
+
+	<!--Add footer-->
+	<footer>
+		ФУТЕР
+	</footer>
+
 	
 </body>
+<script type="text/javascript" src="scripts/video.js?vers1.1"></script>
 </html>
