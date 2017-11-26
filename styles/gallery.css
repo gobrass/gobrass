@@ -10,7 +10,7 @@
 .view_box {
 	width: 544px;
 	height: 330px;
-	/*background-color: #121212; */
+	/*background-color: #121212;*/
 	float: left;
 	margin-right: 3%;
 	list-style: none;
@@ -46,11 +46,11 @@
 	display: block;
 	position: absolute;
 	width: 544px;
-	height: 330px;
 	z-index: 2;
 }
 
 .view_box:first-child a {
+	height: 330px;
 	margin-left: -30px;
 	margin-top: -50px;
 }
@@ -72,13 +72,18 @@
 
 .img_video {
 	width: 544px;
-	position: absolute;
 }
 
-.view_box:hover:nth-child(2) img {
+.th_2 {
+	height: 163px;
+}
+
+.th_2:hover {
 	box-shadow: 3px 3px 5px 0 #777;
+	margin-top: -3px;
 }
 
-.view_box:hover:nth-child(2) {
-	margin-top: -3px;
+.view_box:nth-child(2) a {
+	height: 163px;
+	margin-top: -185px;
 }
