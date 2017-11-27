@@ -1,38 +1,53 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .clr {
 	clear: both;
 }
 
+
+.wrapper_gallery {
+	width: 1700px;
+	height: 960px;
+	margin: 0 auto;
+	padding-top: 124px;
+    padding-left: 289px;
+    padding-right: 289px;
+	background-image: url('../library/images/service/concerts.jpg');
+	box-sizing: border-box;
+}
+
+.wrapper_gallery h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.gallery_nav {
+	margin-top: 30px;
+	float: left;
+}
+
 .view_box {
+	/*background-color: #121212;*/
+	list-style: none;
+	float: left;
+}
+
+.view_box:first-child {
 	width: 544px;
 	height: 330px;
-	/*background-color: #121212;*/
-	float: left;
-	margin-right: 3%;
-	list-style: none;
+	position: relative;
+	padding: 50px 0 0 30px;
+	box-sizing: border-box;
+	margin-right: 15px;
 }
 
 .view_box:hover:first-child img {
 	box-shadow: 3px 3px 5px 0 #777;
 }
 
-.view_box:hover:first-child{
+.view_box:hover:first-child .th_1 {
 	margin-top: -3px;
 }
 
-.view_box:nth-child(2) {
-	margin-right: 0;
-	box-sizing: border-box;
-	padding-top: 80px;
-}
-
-.view_box:first-child {
-	position: relative;
-	padding: 50px 0 0 30px;
+.view_box2:first-child {
 	box-sizing: border-box;
 }
 
@@ -71,6 +86,7 @@
 }
 
 .th_2 {
+	width: 544px;
 	height: 163px;
 	position: relative;
 }
@@ -86,8 +102,13 @@
 	float: left;
 }
 
-.view_box:nth-child(2) a {
+.view_box2:first-child a {
 	height: 163px;
+}
+
+.view_box2 {
+	float: left;
+	margin-right: 15px;
 }
 
 .img_video_size {
@@ -128,4 +149,9 @@
 
 .play_btn3 {
 	left: 424px;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #9e005d;
 }
