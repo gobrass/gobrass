@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clr {
+	clear: both;
+}
+
+.container {
+	width: 1700px;
+	background-color: #125468;
+	margin: 0 auto;
+}
+
+.gallery {
+	margin: 0 auto;
+	width: 1290px;
+	background-color: #318514;
+}
+
+.preview {
+	width: 300px;
+	background-color: #ccc; 
+	float: left;
+	height: 200px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.preview:nth-child(4n) {
+	margin-right: 0;
+}
+
+.mrg_bttm {
+	margin-bottom: 0;
+}
