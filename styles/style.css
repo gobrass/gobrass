@@ -2,23 +2,20 @@
   margin: 0;
   padding: 0;
 }
-ul {
-  list-style: none;
-}
 a {
   text-decoration: none;
 }
 .wrapper1 {
   width: 1700px;
-  margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
   background-color: #9e005d;
+  position: relative;
 }
 header {
   height: 101px;
   width: 100%;
   background-color: #9e005d;
-  display: block;
   top: 0;
   left: 0;
 }
@@ -28,35 +25,44 @@ header .logo1 {
   height: 85px;
   float: left;
   margin-top: 8px;
+  margin-left: 100px;
+  background-image: url('../library/images/service/logo.png');
+  background-size: cover;
 }
 header nav {
-  margin-left: 450px;
+  margin-left: 400px;
+}
+header nav ul {
+  list-style: none;
 }
 header li a {
   display: block;
   float: left;
   line-height: 16px;
   color: #fff;
-  margin: 42px 25px 0 0;
+  margin: 44px 25px 0 0;
 }
 header .lastChild {
   margin-right: 0;
 }
 header .tel {
-  display: block;
   color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 27px;
 }
-header .tel img {
-  display: block;
-  margin: 32px 0 0 250px;
-  float: left;
-}
-header .tel div {
+header .tel .number {
+  float: right;
   font-size: 24px;
   line-height: 32px;
-  float: left;
-  padding-left: 15px;
-  margin-top: 32px;
+}
+header .tel .fone {
+  width: 31px;
+  height: 32px;
+  float: right;
+  margin-right: 15px;
+  background-image: url('../library/images/service/tel.png');
+  background-size: cover;
 }
 /*main{
 	width: 100%;
@@ -81,6 +87,20 @@ header .tel div {
   position: absolute;
   top: 600px;
   margin-left: 826px;
+}
+.look_video .play button {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  background-image: url('../library/images/service/play.png');
+  background-size: cover;
+  border: none;
+}
+.look_video .play button:active {
+  outline: none;
+}
+.look_video .play button:focus {
+  outline: none;
 }
 .about_us {
   position: relative;
@@ -111,6 +131,8 @@ header .tel div {
   font-size: 30px;
 }
 .about_us .why_we .question {
+  margin-top: 96px;
+  margin-bottom: 50px;
   font-size: 48px;
   font-weight: 900;
   color: #9e005d;
@@ -160,14 +182,47 @@ header .tel div {
   color: #9e005d;
 }
 .concerts {
+  clear: both;
+  display: block;
+  position: relative;
   margin: 0 auto;
   width: 1700px;
   height: 960px;
   background: url('../library/images/service/concerts.jpg');
-  font-size: 30px;
-  text-align: center;
+}
+.concerts .truba2 {
+  display: block;
+  float: left;
+  width: 43px;
+  height: 53px;
+  margin: 85px 0 0 692px;
+}
+.concerts h1 {
+  float: left;
+  margin: 101px 0 0 24px;
+}
+.concerts button {
+  display: block;
+  position: absolute;
+  clear: both;
+  font-size: 16px;
+  color: #fff;
+  width: 210px;
+  height: 37px;
+  background-color: #9e005d;
+  border: 0px;
+  border-radius: 16px;
+  bottom: 106px;
+  left: 745px;
+}
+.concerts button:active {
+  outline: none;
+}
+.concerts button:focus {
+  outline: none;
 }
 .organizer {
+  display: block;
   width: 1700px;
   height: 366px;
   margin: 0 auto;
@@ -175,11 +230,144 @@ header .tel div {
   font-size: 30px;
   background-color: #662d91;
 }
-footer {
+.organizer .baraban {
+  display: block;
+  float: left;
+  width: 53px;
+  height: 52px;
+  margin-left: 672px;
+  margin-top: 41px;
+}
+.organizer h1 {
+  float: left;
+  margin-top: 55px;
+  margin-left: 20px;
+  font-size: 30px;
+  color: #fff;
+}
+.organizer .downl {
+  float: left;
+  width: 382px;
+  height: 179px;
+  margin-left: 659px;
+  margin-top: 48px;
+  text-align: center;
+  color: #fff;
+}
+.organizer .downl .downl1,
+.organizer .downl .downl2,
+.organizer .downl .downl3 {
+  float: left;
+  width: 127.3px;
+  height: 113px;
+  font-size: 16px;
+}
+.organizer .downl .downl1 img,
+.organizer .downl .downl2 img,
+.organizer .downl .downl3 img {
+  display: block;
+  width: 83px;
+  height: 83px;
+  margin-left: 22.15px;
+  margin-top: 10px;
+}
+.organizer .downl .downl4 {
+  display: block;
+  float: left;
+  font-size: 18px;
+  margin-top: 55px;
+  margin-left: 81px;
+}
+.wrapper_end {
   width: 1700px;
+  height: 1450px;
+  background-color: #9e005d;
+  margin: 0 auto;
+}
+footer {
+  width: 100%;
   height: 1450px;
   margin: 0 auto;
   background-color: #9e005d;
   text-align: center;
   font-size: 30px;
+}
+footer h1 {
+  display: none;
+}
+footer .call_us {
+  width: 1700px;
+  height: 657px;
+  background-image: url('../library/images/service/tolpa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 221px;
+}
+footer .call_us .p1 {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+  font-size: 30px;
+}
+footer .call_us .p2 {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 60px;
+}
+footer .call_us .p3 {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+  font-size: 30px;
+}
+footer .call_us .p4 {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 48px;
+}
+footer .call_us .p5 {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 55px;
+  font-size: 30px;
+}
+footer .call_us .social {
+  clear: both;
+  width: 700px;
+  height: 113px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: #fff;
+}
+footer .call_us .social img {
+  width: 72px;
+  height: 72px;
+}
+footer .good_back {
+  width: 1700px;
+  height: 624px;
+  background-image: url('../library/images/service/good_back.jpg');
+  background-size: cover;
+  background-position: 0px -193px;
+}
+footer .end {
+  height: 107px;
+}
+footer .end .sax {
+  width: 74px;
+  height: 128px;
+  margin-top: -70px;
+}
+footer .end .gb {
+  width: 245px;
+}
+footer .end p {
+  clear: both;
+  display: block;
+  text-align: center;
+  font-size: 13px;
 }

@@ -3,10 +3,6 @@
 	padding: 0;
 }
 
-ul{
-	list-style: none;
-}
-
 a{
 	text-decoration: none;
 }
@@ -16,16 +12,16 @@ a{
 
 .wrapper1{
 	width: 1700px;
-	margin: 0 auto;
 	height: 100%;
+	margin: 0 auto;
 	background-color: #9e005d;
+	position: relative;
 }
 
 header{
 	height: 101px;
 	width: 100%;
 	background-color: #9e005d;
-	display: block;
 	top: 0;
 	left: 0;
 	.logo1{
@@ -34,10 +30,16 @@ header{
 		height: 85px;
 		float: left;
 		margin-top: (101px - 85px)/2;
+		margin-left: 100px;
+		background-image: url('../library/images/service/logo.png');
+		background-size: cover;
 	}
 
 	nav{
-		margin-left: 450px;
+		margin-left: 400px;
+		ul{
+			list-style: none;
+		}
 	}
 	
 	li a{
@@ -45,7 +47,7 @@ header{
 		float: left;
 		line-height: 16px;
 		color: #fff;
-		margin: 42px 25px 0 0;
+		margin: 44px 25px 0 0;
 	}
 
 	.lastChild{
@@ -54,21 +56,24 @@ header{
 
 
 	.tel{
-		display: block;
 		color: #fff;
-		
-		img{
-			display: block;
-			margin: 32px 0 0 250px;
-			float: left;
-		}
-		div{
+		//float: left;
+		//margin-top: 27px;
+		position: absolute;
+		right: 15px;
+		top: 27px;
+		.number{
+			float: right;
 			font-size: 24px;
 			line-height: 32px;
-			float: left;
-			padding-left: 15px;
-			margin-top: 32px;
-			
+		}
+		.fone{
+			width: 31px;
+			height: 32px;
+			float: right;
+			margin-right: 15px;
+			background-image: url('../library/images/service/tel.png');
+			background-size: cover;
 		}
 	}
 
@@ -100,6 +105,20 @@ header{
 		position: absolute;
 		top: 600px;
 		margin-left: 826px;
+		button{
+			width: 48px;
+			height: 48px;
+			background: transparent;
+			background-image: url('../library/images/service/play.png');
+			background-size: cover;
+			border: none;
+			&:active{
+				outline: none;
+			}
+			&:focus{
+				outline: none;
+			}
+		}
 	}
 }
 
@@ -133,6 +152,8 @@ header{
 			
 		}
 		.question{
+			margin-top: 96px;
+			margin-bottom: 50px;
 			font-size: 48px;
 			font-weight: 900;
 			color: #9e005d;
@@ -190,33 +211,203 @@ header{
 
 //styles for concerts
 .concerts{
+	clear: both;
+	display: block;
+	position: relative;
 	margin: 0 auto;
 	width: 1700px;
 	height: 960px;
 	background: url('../library/images/service/concerts.jpg');
-	font-size: 30px;
-	text-align: center;
+	.truba2{
+		display: block;
+		float: left;
+		width: 43px;
+		height: 53px;
+		margin: 85px 0 0 692px;
+	}
+	h1{
+		float: left;
+		margin: 101px 0 0 24px;
+	}
+	button{
+		display: block;
+		position: absolute;
+		clear: both;
+		font-size: 16px;
+		color: #fff;
+		width: 210px;
+		height: 37px;
+		background-color: #9e005d;
+		border: 0px;
+		border-radius: 16px;
+		bottom: 106px;
+		left: 745px;
+		&:active{
+			outline: none;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
 	
 }
 
 //styles for organizers
 .organizer{
+	display: block;
 	width: 1700px;
 	height: 366px;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 30px;
 	background-color: #662d91;
+	.baraban{
+		display: block;
+		float: left;
+		width: 53px;
+		height: 52px;
+		margin-left: 672px;
+		margin-top: 41px;
+	}
+	h1{
+		float: left;
+		margin-top: 55px;
+		margin-left: 20px;
+		font-size: 30px;
+		color: #fff;
+	}
+	.downl{
+		float: left;
+		width: 382px;
+		height: 179px;
+		margin-left: 659px;
+		margin-top: 48px;
+		text-align: center;
+		color: #fff;
+		.downl1, .downl2, .downl3{
+			float: left;
+			width: 127.3px;
+			height: 113px;
+			font-size: 16px;
+			img{
+				display: block;
+				width: 83px;
+				height: 83px;
+				margin-left: 22.15px;
+				margin-top: 10px;
+			}
+		}
+		.downl4{
+			display: block;
+			float: left;
+			font-size: 18px;
+			margin-top: 55px;
+			margin-left: 81px;
+			
+		}
+	}
 	
 }
 
 //styles for footer
-footer{
+.wrapper_end{
 	width: 1700px;
+	height: 1450px;
+	background-color: #9e005d;
+	margin: 0 auto;
+}
+
+footer{
+	width: 100%;
 	height: 1450px;
 	margin: 0 auto;
 	background-color: #9e005d;
 	text-align: center;
 	font-size: 30px;
+	h1{
+		display: none;
+	}
+	.call_us{
+		width: 1700px;
+		height: 657px;
+		background-image: url('../library/images/service/tolpa.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0px 221px;
+		.p1{
+			float: left;
+			width: 100%;
+			margin-top: 60px;
+			font-size: 30px;
+		}
+		.p2{
+			float: left;
+			width: 100%;
+			margin-top: 30px;
+			font-size: 60px;
+		}
+		.p3{
+			float: left;
+			width: 100%;
+			margin-top: 60px;
+			font-size: 30px;
+		}
+		.p4{
+			float: left;
+			width: 100%;
+			margin-top: 30px;
+			font-size: 48px;
+		}
+		.p5{
+			float: left;
+			width: 100%;
+			margin-top: 60px;
+			margin-bottom: 55px;
+			font-size: 30px;
+		}
+		.social{
+			clear: both;
+			width: 700px;
+			height: 113px;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			color: #fff;
+			div{
+				
+			}
+			img{
+				width: 72px;
+				height: 72px;
+			}
+			
+		}
+		
+	}
+	.good_back{
+		width: 1700px;
+		height: 624px;
+		background-image: url('../library/images/service/good_back.jpg');
+		background-size: cover;
+		background-position: 0px -193px;
+	}
+	.end{
+		height: 107px;
+		.sax{
+			width: 74px;
+			height: 128px;
+			margin-top: -70px;
+		}
+		.gb{
+			width: 245px;
+			//height: 34px;
+		}
+		p{
+			clear: both;
+			display: block;
+			text-align: center;
+			font-size: 13px;			
+		}
+	}
 }
 
