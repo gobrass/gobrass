@@ -120,28 +120,3 @@
 	cursor: default;
 	background-color: #662d91;
 }
-
-.bread_crumbs li {
-	float: left;
-	list-style-type: none;
-	margin-right: 5px;
-}
-
-.bread_crumbs li a {
-	text-decoration: none;
-	border-bottom: 2px solid #9e005d;
-	color: #9e005d;
-	font-size: 18px;
-	line-height: 15px;
-	font-weight: bold;
-}
-
-.bread_crumbs li a:hover {
-	border-bottom: 0;
-}
-
-.bread_crumbs li:last-child a {
-	border-bottom: 0;
-	cursor: default;
-	color: #662d91;
-}
