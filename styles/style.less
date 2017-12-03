@@ -7,21 +7,90 @@ a{
 	text-decoration: none;
 }
 
+.clr { 
+clear: both; 
+}
+
+//connection fonts
+
+@font-face
+{
+	font-family: "CoreRhino25Thin";
+	src: url('../fonts/CoreRhino25Thin.otf');
+}
+
+@font-face
+{
+	font-family: "CoreRhino55Medium";
+	src: url('../fonts/CoreRhino55Medium.otf');
+}
+
+@font-face
+{
+	font-family: "CoreRhino85Black";
+	src: url('../fonts/CoreRhino85Black.otf');
+}
+
+@font-face
+{
+	font-family: "Roboto-Regular";
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Roboto-Light";
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face
+{
+	font-family: "Roboto-Bold";
+	src: url('../fonts/Roboto-Bold.ttf');
+}
+
+
+//styles for bread crumbs
+.bread_crumbs li { 
+float: left; 
+list-style-type: none; 
+margin-right: 5px; 
+} 
+
+.bread_crumbs li a { 
+text-decoration: none; 
+border-bottom: 2px solid #9e005d; 
+color: #9e005d; 
+font-size: 18px; 
+line-height: 15px; 
+font-weight: bold; 
+} 
+
+.bread_crumbs li a:hover { 
+border-bottom: 0; 
+} 
+
+.bread_crumbs li:last-child a { 
+border-bottom: 0; 
+cursor: default; 
+color: #662d91; 
+}
 
 //styles for header:
 
 .wrapper1{
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	height: 100%;
 	margin: 0 auto;
 	background-color: #9e005d;
-	position: relative;
+	//position: relative;
 }
 
 header{
 	height: 101px;
 	width: 100%;
-	background-color: #9e005d;
+	background-color: #fff;
 	top: 0;
 	left: 0;
 	.logo1{
@@ -29,14 +98,14 @@ header{
 		width: 89px;
 		height: 85px;
 		float: left;
-		margin-top: (101px - 85px)/2;
-		margin-left: 100px;
+		margin-top: 8px;
+		margin-left: 10%;
 		background-image: url('../library/images/service/logo.png');
 		background-size: cover;
 	}
 
 	nav{
-		margin-left: 400px;
+		margin-left: 20%;
 		ul{
 			list-style: none;
 		}
@@ -48,6 +117,7 @@ header{
 		line-height: 16px;
 		color: #fff;
 		margin: 44px 25px 0 0;
+		font-family: CoreRhino85Black;
 	}
 
 	.lastChild{
@@ -57,15 +127,17 @@ header{
 
 	.tel{
 		color: #fff;
-		//float: left;
-		//margin-top: 27px;
-		position: absolute;
-		right: 15px;
-		top: 27px;
+		float: right;
+		margin-top: 33px;
+		margin-right: 10%;
+		//position: absolute;
+		//right: 15px;
+		//top: 27px;
 		.number{
 			float: right;
 			font-size: 24px;
 			line-height: 32px;
+			font-family: CoreRhino55Medium;
 		}
 		.fone{
 			width: 31px;
@@ -80,12 +152,13 @@ header{
 }
 
 //styles for video:
-/*main{
+main{
 	width: 100%;
-}*/
+}
 
 .wrapper2{
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	margin: 0 auto;
 }
 
@@ -95,15 +168,48 @@ header{
 	height: 956px;
 	width: 100%;
 	position: relative;
+	margin: 0 auto;
 	.video{
 		margin: 0 auto;
 		display: block;
-		width: 1700px;
-		//height: 818px;
+		width: 100%;
 	}
+
+	.logo2{
+		position: absolute;
+		top: 15px;
+		margin-left: 600px;
+		width: 500px;
+		height: 500px;
+		z-index: 3;
+		background-image: url('../library/images/service/logo.png');
+		background-size: cover;
+	}
+
+	.bomba{
+		position: absolute;
+		top: 550px;
+		margin-left: 511.5px;
+		width: 677px;
+		height: 135px;
+		//margin: 0 auto;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.47);
+		.fv1{
+			font-family: CoreRhino25Thin;
+			font-size: 43.65px;
+		}
+		.fv2{
+			font-family: CoreRhino85Black;
+			font-size: 58.45px;
+			text-align: center;
+		}
+	}
+
+
 	.play{
 		position: absolute;
-		top: 600px;
+		top: 700px;
 		margin-left: 826px;
 		button{
 			width: 48px;
@@ -129,7 +235,8 @@ header{
 	margin: -150px auto 0 auto;
 	height: 787px;
 	display: block;
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	background-color: #fff;
 	.img1{
 		margin-left: 264px;
@@ -149,6 +256,8 @@ header{
 		width: 900px;
 		h2{
 			font-size: 30px;
+			font-family: Roboto-Regular;
+			font-weight: 400;
 			
 		}
 		.question{
@@ -157,6 +266,13 @@ header{
 			font-size: 48px;
 			font-weight: 900;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-weight: 400;
+		}
+		p{
+			font-family: Roboto-Light;
+			font-size: 18px;
+			font-weight: 300;
 		}
 	}
 	.reason1{
@@ -173,6 +289,8 @@ header{
 			text-align: center;
 			margin-top: 35px;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-size: 18px;
 		}
 	}
 	.reason2{
@@ -188,6 +306,8 @@ header{
 			text-align: center;
 			margin-top: 35px;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-size: 18px;
 		}
 		
 	}
@@ -204,6 +324,8 @@ header{
 			text-align: center;
 			margin-top: 35px;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-size: 18px;
 		}
 	}
 			
@@ -215,7 +337,8 @@ header{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	height: 960px;
 	background: url('../library/images/service/concerts.jpg');
 	.truba2{
@@ -225,14 +348,18 @@ header{
 		height: 53px;
 		margin: 85px 0 0 692px;
 	}
-	h1{
+	h2{
 		float: left;
 		margin: 101px 0 0 24px;
+		font-family: Roboto-Regular;
+		font-size: 30px;
+		font-weight: 400;
 	}
 	button{
 		display: block;
 		position: absolute;
 		clear: both;
+		font-family: Roboto-Regular;
 		font-size: 16px;
 		color: #fff;
 		width: 210px;
@@ -255,7 +382,8 @@ header{
 //styles for organizers
 .organizer{
 	display: block;
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	height: 366px;
 	margin: 0 auto;
 	text-align: center;
@@ -269,11 +397,13 @@ header{
 		margin-left: 672px;
 		margin-top: 41px;
 	}
-	h1{
+	h2{
 		float: left;
 		margin-top: 55px;
 		margin-left: 20px;
+		font-family: Roboto-Regular;
 		font-size: 30px;
+		font-weight: 400;
 		color: #fff;
 	}
 	.downl{
@@ -288,6 +418,7 @@ header{
 			float: left;
 			width: 127.3px;
 			height: 113px;
+			font-family: CoreRhino85Black;
 			font-size: 16px;
 			img{
 				display: block;
@@ -298,11 +429,14 @@ header{
 			}
 		}
 		.downl4{
+			width: 382px;
 			display: block;
 			float: left;
+			font-family: CoreRhino85Black;
 			font-size: 18px;
 			margin-top: 55px;
-			margin-left: 81px;
+			//margin-left: 81px;
+			text-align: center;
 			
 		}
 	}
@@ -311,51 +445,59 @@ header{
 
 //styles for footer
 .wrapper_end{
-	width: 1700px;
-	height: 1450px;
+	max-width: 1700px;
+	min-width: 1290px;
+	height: 100%;
 	background-color: #9e005d;
 	margin: 0 auto;
+	position: relative;
 }
 
 footer{
 	width: 100%;
 	height: 1450px;
 	margin: 0 auto;
-	background-color: #9e005d;
+	background-color: #fff;
 	text-align: center;
 	font-size: 30px;
-	h1{
+	h2{
 		display: none;
 	}
 	.call_us{
-		width: 1700px;
+		max-width: 1700px;
+		min-width: 1290px;
 		height: 657px;
 		background-image: url('../library/images/service/tolpa.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0px 221px;
+		color: #fff;
 		.p1{
 			float: left;
 			width: 100%;
 			margin-top: 60px;
+			font-family: Roboto-Regular;
 			font-size: 30px;
 		}
 		.p2{
 			float: left;
 			width: 100%;
 			margin-top: 30px;
+			font-family: Roboto-Regular;
 			font-size: 60px;
 		}
 		.p3{
 			float: left;
 			width: 100%;
 			margin-top: 60px;
+			font-family: Roboto-Regular;
 			font-size: 30px;
 		}
 		.p4{
 			float: left;
 			width: 100%;
 			margin-top: 30px;
+			font-family: Roboto-Regular;
 			font-size: 48px;
 		}
 		.p5{
@@ -363,6 +505,7 @@ footer{
 			width: 100%;
 			margin-top: 60px;
 			margin-bottom: 55px;
+			font-family: Roboto-Regular;
 			font-size: 30px;
 		}
 		.social{
@@ -374,7 +517,8 @@ footer{
 			margin: 0 auto;
 			color: #fff;
 			div{
-				
+				font-family: Roboto-Regular;
+				font-size: 16px;
 			}
 			img{
 				width: 72px;
@@ -385,7 +529,8 @@ footer{
 		
 	}
 	.good_back{
-		width: 1700px;
+		max-width: 1700px;
+		min-width: 1290px;
 		height: 624px;
 		background-image: url('../library/images/service/good_back.jpg');
 		background-size: cover;
@@ -408,6 +553,10 @@ footer{
 			text-align: center;
 			font-size: 13px;			
 		}
+	}
+	.GB2017{
+		font-family: Roboto-Light;
+		font-size: 13px;
 	}
 }
 
