@@ -7,21 +7,57 @@ a{
 	text-decoration: none;
 }
 
+@font-face
+{
+	font-family: "CoreRhino25Thin";
+	src: url('../fonts/CoreRhino25Thin.otf');
+}
+
+@font-face
+{
+	font-family: "CoreRhino55Medium";
+	src: url('../fonts/CoreRhino55Medium.otf');
+}
+
+@font-face
+{
+	font-family: "CoreRhino85Black";
+	src: url('../fonts/CoreRhino85Black.otf');
+}
+
+@font-face
+{
+	font-family: "Roboto-Regular";
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Roboto-Light";
+	src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face
+{
+	font-family: "Roboto-Bold";
+	src: url('../fonts/Roboto-Bold.ttf');
+}
 
 //styles for header:
 
 .wrapper1{
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	height: 100%;
 	margin: 0 auto;
 	background-color: #9e005d;
-	position: relative;
+	//position: relative;
 }
 
 header{
 	height: 101px;
 	width: 100%;
-	background-color: #9e005d;
+	background-color: #fff;
 	top: 0;
 	left: 0;
 	.logo1{
@@ -29,14 +65,14 @@ header{
 		width: 89px;
 		height: 85px;
 		float: left;
-		margin-top: (101px - 85px)/2;
-		margin-left: 100px;
+		margin-top: 0.5%;
+		margin-left: 15.4%;
 		background-image: url('../library/images/service/logo.png');
 		background-size: cover;
 	}
 
 	nav{
-		margin-left: 400px;
+		margin-left: 27.8%;
 		ul{
 			list-style: none;
 		}
@@ -48,6 +84,7 @@ header{
 		line-height: 16px;
 		color: #fff;
 		margin: 44px 25px 0 0;
+		font-family: CoreRhino85Black;
 	}
 
 	.lastChild{
@@ -57,15 +94,17 @@ header{
 
 	.tel{
 		color: #fff;
-		//float: left;
-		//margin-top: 27px;
-		position: absolute;
-		right: 15px;
-		top: 27px;
+		float: right;
+		margin-top: 27px;
+		margin-right: 15px;
+		//position: absolute;
+		//right: 15px;
+		//top: 27px;
 		.number{
 			float: right;
 			font-size: 24px;
 			line-height: 32px;
+			font-family: CoreRhino55Medium;
 		}
 		.fone{
 			width: 31px;
@@ -80,12 +119,13 @@ header{
 }
 
 //styles for video:
-/*main{
+main{
 	width: 100%;
-}*/
+}
 
 .wrapper2{
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	margin: 0 auto;
 }
 
@@ -129,7 +169,8 @@ header{
 	margin: -150px auto 0 auto;
 	height: 787px;
 	display: block;
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	background-color: #fff;
 	.img1{
 		margin-left: 264px;
@@ -149,6 +190,7 @@ header{
 		width: 900px;
 		h2{
 			font-size: 30px;
+			font-family: Roboto-Regular;
 			
 		}
 		.question{
@@ -157,6 +199,11 @@ header{
 			font-size: 48px;
 			font-weight: 900;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+		}
+		p{
+			font-family: Roboto-Light;
+			font-size: 16px;
 		}
 	}
 	.reason1{
@@ -173,6 +220,8 @@ header{
 			text-align: center;
 			margin-top: 35px;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-size: 18px;
 		}
 	}
 	.reason2{
@@ -188,6 +237,8 @@ header{
 			text-align: center;
 			margin-top: 35px;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-size: 18px;
 		}
 		
 	}
@@ -204,6 +255,8 @@ header{
 			text-align: center;
 			margin-top: 35px;
 			color: #9e005d;
+			font-family: CoreRhino85Black;
+			font-size: 18px;
 		}
 	}
 			
@@ -215,7 +268,8 @@ header{
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	height: 960px;
 	background: url('../library/images/service/concerts.jpg');
 	.truba2{
@@ -228,11 +282,14 @@ header{
 	h1{
 		float: left;
 		margin: 101px 0 0 24px;
+		font-family: Roboto-Regular;
+		font-size: 30px;
 	}
 	button{
 		display: block;
 		position: absolute;
 		clear: both;
+		font-family: Roboto-Regular;
 		font-size: 16px;
 		color: #fff;
 		width: 210px;
@@ -255,7 +312,8 @@ header{
 //styles for organizers
 .organizer{
 	display: block;
-	width: 1700px;
+	max-width: 1700px;
+	min-width: 1290px;
 	height: 366px;
 	margin: 0 auto;
 	text-align: center;
@@ -273,6 +331,7 @@ header{
 		float: left;
 		margin-top: 55px;
 		margin-left: 20px;
+		font-family: Roboto-Regular;
 		font-size: 30px;
 		color: #fff;
 	}
@@ -288,6 +347,7 @@ header{
 			float: left;
 			width: 127.3px;
 			height: 113px;
+			font-family: CoreRhino85Black;
 			font-size: 16px;
 			img{
 				display: block;
@@ -300,6 +360,7 @@ header{
 		.downl4{
 			display: block;
 			float: left;
+			font-family: CoreRhino85Black;
 			font-size: 18px;
 			margin-top: 55px;
 			margin-left: 81px;
@@ -311,17 +372,19 @@ header{
 
 //styles for footer
 .wrapper_end{
-	width: 1700px;
-	height: 1450px;
+	max-width: 1700px;
+	min-width: 1290px;
+	height: 100%;
 	background-color: #9e005d;
 	margin: 0 auto;
+	position: relative;
 }
 
 footer{
 	width: 100%;
 	height: 1450px;
 	margin: 0 auto;
-	background-color: #9e005d;
+	background-color: #fff;
 	text-align: center;
 	font-size: 30px;
 	h1{
@@ -334,28 +397,33 @@ footer{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0px 221px;
+		color: #fff;
 		.p1{
 			float: left;
 			width: 100%;
 			margin-top: 60px;
+			font-family: Roboto-Regular;
 			font-size: 30px;
 		}
 		.p2{
 			float: left;
 			width: 100%;
 			margin-top: 30px;
+			font-family: Roboto-Regular;
 			font-size: 60px;
 		}
 		.p3{
 			float: left;
 			width: 100%;
 			margin-top: 60px;
+			font-family: Roboto-Regular;
 			font-size: 30px;
 		}
 		.p4{
 			float: left;
 			width: 100%;
 			margin-top: 30px;
+			font-family: Roboto-Regular;
 			font-size: 48px;
 		}
 		.p5{
@@ -363,6 +431,7 @@ footer{
 			width: 100%;
 			margin-top: 60px;
 			margin-bottom: 55px;
+			font-family: Roboto-Regular;
 			font-size: 30px;
 		}
 		.social{
@@ -374,7 +443,8 @@ footer{
 			margin: 0 auto;
 			color: #fff;
 			div{
-				
+				font-family: Roboto-Regular;
+				font-size: 16px;
 			}
 			img{
 				width: 72px;
@@ -408,6 +478,10 @@ footer{
 			text-align: center;
 			font-size: 13px;			
 		}
+	}
+	.GB2017{
+		font-family: Roboto-Light;
+		font-size: 13px;
 	}
 }
 
