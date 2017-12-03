@@ -9,25 +9,51 @@
 
 .container {
 	width: 1700px;
-	background-color: #125468;
 	margin: 0 auto;
+	padding: 30px 50px;
+	background-color: #f3d7ff;
+	box-sizing: border-box;
+}
+
+.container h2 {
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .gallery {
-	margin: 0 auto;
+	margin: 30px auto 50px auto;
 	width: 1290px;
-	background-color: #318514;
 }
 
 .preview {
 	width: 300px;
-	background-color: #ccc; 
 	float: left;
 	height: 200px;
 	margin-right: 30px;
 	margin-bottom: 30px;
+}
+
+.preview img {
+	border-radius: 5px;
+}
+
+.sock {
+	background-color: #fff; 
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.sock img {
+	display: block;
+	margin: 0 auto;
+}
+
+.sock:hover {
+	box-shadow: 2px 2px 4px 0;
+	margin-top: -2px;
+	margin-left: -2px;
+	cursor: pointer;
 }
 
 .preview:nth-child(4n) {
@@ -36,4 +62,86 @@
 
 .mrg_bttm {
 	margin-bottom: 0;
+}
+
+.pages {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.pages ul li {
+	float: left;
+	list-style-type: none;
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.pages ul li:last-child {
+	margin-right: 0;
+}
+
+.pages ul li:first-child .page, .pages ul li:last-child .page {
+	background-color: #9e005d;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.page {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 0 2px 2px 0 gray;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.page:active {
+	color: black;
+}
+
+.actived {
+	background-color: #662d91;
+	color: #fff;
+}
+
+.page:hover, .pages ul li:first-child .page:hover, .pages ul li:last-child .page:hover {
+	cursor: pointer;
+	background-color: #e244a1;
+}
+
+.actived:hover {
+	cursor: default;
+	background-color: #662d91;
+}
+
+.bread_crumbs li {
+	float: left;
+	list-style-type: none;
+	margin-right: 5px;
+}
+
+.bread_crumbs li a {
+	text-decoration: none;
+	border-bottom: 2px solid #9e005d;
+	color: #9e005d;
+	font-size: 18px;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+.bread_crumbs li a:hover {
+	border-bottom: 0;
+}
+
+.bread_crumbs li:last-child a {
+	border-bottom: 0;
+	cursor: default;
+	color: #662d91;
 }
