@@ -73,12 +73,12 @@ header .logo1 {
   height: 85px;
   float: left;
   margin-top: 8px;
-  margin-left: 10%;
+  margin-left: 7%;
   background-image: url('../library/images/service/logo.png');
   background-size: cover;
 }
 header nav {
-  margin-left: 20%;
+  margin-left: 18%;
 }
 header nav ul {
   list-style: none;
@@ -88,7 +88,7 @@ header li a {
   float: left;
   line-height: 16px;
   color: #fff;
-  margin: 44px 25px 0 0;
+  margin: 44px 2% 0 0;
   font-family: CoreRhino85Black;
 }
 header .lastChild {
@@ -98,7 +98,7 @@ header .tel {
   color: #fff;
   float: right;
   margin-top: 33px;
-  margin-right: 10%;
+  margin-right: 10px;
 }
 header .tel .number {
   float: right;
@@ -463,9 +463,41 @@ footer .call_us .social div {
   font-family: Roboto-Regular;
   font-size: 16px;
 }
-footer .call_us .social img {
+footer .call_us .social .vk {
+  display: block;
   width: 72px;
   height: 72px;
+  background-image: url('../library/images/service/vk.png');
+  background-size: cover;
+  margin: 0 auto;
+}
+footer .call_us .social .inst {
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url('../library/images/service/instagram.png');
+  background-size: cover;
+}
+footer .call_us .social .fb {
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url('../library/images/service/facebook.png');
+  background-size: cover;
+}
+footer .call_us .social .yt {
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url('../library/images/service/youtube.png');
+  background-size: cover;
+}
+footer .call_us .social .tw {
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url('../library/images/service/twitter.png');
+  background-size: cover;
 }
 footer .good_back {
   max-width: 1700px;
