@@ -5,6 +5,9 @@
 a {
   text-decoration: none;
 }
+.clr {
+  clear: both;
+}
 @font-face {
   font-family: "CoreRhino25Thin";
   src: url('../fonts/CoreRhino25Thin.otf');
@@ -29,6 +32,27 @@ a {
   font-family: "Roboto-Bold";
   src: url('../fonts/Roboto-Bold.ttf');
 }
+.bread_crumbs li {
+  float: left;
+  list-style-type: none;
+  margin-right: 5px;
+}
+.bread_crumbs li a {
+  text-decoration: none;
+  border-bottom: 2px solid #9e005d;
+  color: #9e005d;
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: bold;
+}
+.bread_crumbs li a:hover {
+  border-bottom: 0;
+}
+.bread_crumbs li:last-child a {
+  border-bottom: 0;
+  cursor: default;
+  color: #662d91;
+}
 .wrapper1 {
   max-width: 1700px;
   min-width: 1290px;
@@ -48,13 +72,13 @@ header .logo1 {
   width: 89px;
   height: 85px;
   float: left;
-  margin-top: 0.5%;
-  margin-left: 15.4%;
+  margin-top: 8px;
+  margin-left: 10%;
   background-image: url('../library/images/service/logo.png');
   background-size: cover;
 }
 header nav {
-  margin-left: 27.8%;
+  margin-left: 20%;
 }
 header nav ul {
   list-style: none;
@@ -73,8 +97,8 @@ header .lastChild {
 header .tel {
   color: #fff;
   float: right;
-  margin-top: 27px;
-  margin-right: 15px;
+  margin-top: 33px;
+  margin-right: 10%;
 }
 header .tel .number {
   float: right;
@@ -104,15 +128,44 @@ main {
   height: 956px;
   width: 100%;
   position: relative;
+  margin: 0 auto;
 }
 .look_video .video {
   margin: 0 auto;
   display: block;
-  width: 1700px;
+  width: 100%;
+}
+.look_video .logo2 {
+  position: absolute;
+  top: 15px;
+  margin-left: 600px;
+  width: 500px;
+  height: 500px;
+  z-index: 3;
+  background-image: url('../library/images/service/logo.png');
+  background-size: cover;
+}
+.look_video .bomba {
+  position: absolute;
+  top: 550px;
+  margin-left: 511.5px;
+  width: 677px;
+  height: 135px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.47);
+}
+.look_video .bomba .fv1 {
+  font-family: CoreRhino25Thin;
+  font-size: 43.65px;
+}
+.look_video .bomba .fv2 {
+  font-family: CoreRhino85Black;
+  font-size: 58.45px;
+  text-align: center;
 }
 .look_video .play {
   position: absolute;
-  top: 600px;
+  top: 700px;
   margin-left: 826px;
 }
 .look_video .play button {
@@ -158,6 +211,7 @@ main {
 .about_us .why_we h2 {
   font-size: 30px;
   font-family: Roboto-Regular;
+  font-weight: 400;
 }
 .about_us .why_we .question {
   margin-top: 96px;
@@ -166,10 +220,12 @@ main {
   font-weight: 900;
   color: #9e005d;
   font-family: CoreRhino85Black;
+  font-weight: 400;
 }
 .about_us .why_we p {
   font-family: Roboto-Light;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 300;
 }
 .about_us .reason1 {
   clear: both;
@@ -238,11 +294,12 @@ main {
   height: 53px;
   margin: 85px 0 0 692px;
 }
-.concerts h1 {
+.concerts h2 {
   float: left;
   margin: 101px 0 0 24px;
   font-family: Roboto-Regular;
   font-size: 30px;
+  font-weight: 400;
 }
 .concerts button {
   display: block;
@@ -283,12 +340,13 @@ main {
   margin-left: 672px;
   margin-top: 41px;
 }
-.organizer h1 {
+.organizer h2 {
   float: left;
   margin-top: 55px;
   margin-left: 20px;
   font-family: Roboto-Regular;
   font-size: 30px;
+  font-weight: 400;
   color: #fff;
 }
 .organizer .downl {
@@ -319,12 +377,13 @@ main {
   margin-top: 10px;
 }
 .organizer .downl .downl4 {
+  width: 382px;
   display: block;
   float: left;
   font-family: CoreRhino85Black;
   font-size: 18px;
   margin-top: 55px;
-  margin-left: 81px;
+  text-align: center;
 }
 .wrapper_end {
   max-width: 1700px;
@@ -342,11 +401,12 @@ footer {
   text-align: center;
   font-size: 30px;
 }
-footer h1 {
+footer h2 {
   display: none;
 }
 footer .call_us {
-  width: 1700px;
+  max-width: 1700px;
+  min-width: 1290px;
   height: 657px;
   background-image: url('../library/images/service/tolpa.png');
   background-size: cover;
@@ -408,7 +468,8 @@ footer .call_us .social img {
   height: 72px;
 }
 footer .good_back {
-  width: 1700px;
+  max-width: 1700px;
+  min-width: 1290px;
   height: 624px;
   background-image: url('../library/images/service/good_back.jpg');
   background-size: cover;
