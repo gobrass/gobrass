@@ -1,33 +1,54 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-.clr {
-	clear: both;
-}
-
 .container {
-	width: 1700px;
-	background-color: #125468;
+	max-width: 1700px;
+	min-width: 1290px;
 	margin: 0 auto;
+	padding: 30px 50px;
+	background-color: #f3d7ff;
+	box-sizing: border-box;
+}
+
+.container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	font-family: Roboto-Regular;
+	font-weight: 400;
 }
 
 .gallery {
-	margin: 0 auto;
+	margin: 30px auto 50px auto;
 	width: 1290px;
-	background-color: #318514;
 }
 
 .preview {
 	width: 300px;
-	background-color: #ccc; 
 	float: left;
 	height: 200px;
 	margin-right: 30px;
 	margin-bottom: 30px;
+}
+
+.preview img {
+	border-radius: 5px;
+}
+
+.sock {
+	background-color: #fff; 
 	padding: 10px;
 	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.sock img {
+	display: block;
+	margin: 0 auto;
+}
+
+.sock:hover {
+	box-shadow: 2px 2px 4px 0;
+	margin-top: -2px;
+	margin-left: -2px;
+	cursor: pointer;
 }
 
 .preview:nth-child(4n) {
@@ -36,4 +57,63 @@
 
 .mrg_bttm {
 	margin-bottom: 0;
+}
+
+.pages {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.pages ul li {
+	float: left;
+	list-style-type: none;
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.pages ul li:last-child {
+	margin-right: 0;
+}
+
+.pages ul li:first-child .page, .pages ul li:last-child .page {
+	background-color: #9e005d;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.page {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 0 2px 2px 0 gray;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	font-family: CoreRhino85Black;
+	font-weight: 400;
+}
+
+.page:active {
+	color: black;
+}
+
+.actived {
+	background-color: #662d91;
+	color: #fff;
+}
+
+.page:hover, .pages ul li:first-child .page:hover, .pages ul li:last-child .page:hover {
+	cursor: pointer;
+	background-color: #e244a1;
+}
+
+.actived:hover {
+	cursor: default;
+	background-color: #662d91;
 }
