@@ -12,6 +12,9 @@
 .wrapper_gallery h2 {
 	text-transform: uppercase;
 	text-align: center;
+	font-size: 30px;
+	font-family: Roboto-Regular;
+	font-weight: 400;
 }
 
 .gallery_nav {
@@ -153,4 +156,12 @@
 h3 {
 	text-transform: uppercase;
 	color: #9e005d;
+	font-family: CoreRhino85Black;
+	font-weight: 400;
+}
+
+.gallery_nav p {
+	font-family: Roboto-Light;
+	font-size: 18px;
+	font-weight: 300;
 }
