@@ -125,6 +125,7 @@ main {
   max-width: 1700px;
   min-width: 1290px;
   margin: 0 auto;
+  position: relative;
 }
 .look_video {
   z-index: 1;
@@ -142,7 +143,7 @@ main {
 .look_video .logo2 {
   position: absolute;
   top: 15px;
-  margin-left: 600px;
+  margin-left: 35%;
   width: 500px;
   height: 500px;
   z-index: 3;
@@ -198,10 +199,12 @@ main {
   background-color: #fff;
 }
 .about_us .img1 {
-  margin-left: 264px;
+  margin-left: 15%;
   margin-top: 102px;
   display: block;
   float: left;
+  max-width: 408px;
+  min-width: 250px;
 }
 .about_us .img2 {
   display: block;
@@ -211,7 +214,7 @@ main {
 .about_us .why_we {
   float: left;
   margin-top: 42px;
-  width: 900px;
+  width: 40%;
 }
 .about_us .why_we h2 {
   font-size: 30px;
@@ -219,8 +222,8 @@ main {
   font-weight: 400;
 }
 .about_us .why_we .question {
-  margin-top: 96px;
-  margin-bottom: 50px;
+  margin-top: 65px;
+  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 900;
   color: #9e005d;
@@ -234,7 +237,7 @@ main {
 }
 .about_us .reason1 {
   clear: both;
-  width: 400px;
+  width: 23%;
   float: left;
   margin-left: 250px;
   margin-top: 45px;
@@ -251,7 +254,7 @@ main {
   font-size: 18px;
 }
 .about_us .reason2 {
-  width: 400px;
+  width: 23%;
   float: left;
   margin-top: 45px;
 }
@@ -267,7 +270,7 @@ main {
   font-size: 18px;
 }
 .about_us .reason3 {
-  width: 400px;
+  width: 23%;
   float: left;
   margin-top: 45px;
 }
@@ -285,19 +288,25 @@ main {
 .concerts {
   clear: both;
   display: block;
-  position: relative;
   margin: 0 auto;
   max-width: 1700px;
   min-width: 1290px;
   height: 960px;
-  background: url('../library/images/service/concerts.jpg');
+  background-image: url('../library/images/service/concerts.jpg');
+  background-size: cover;
+}
+.concerts .wrapper_cts {
+  width: 314px;
+  margin: 0 auto;
+  height: 960px;
 }
 .concerts .truba2 {
   display: block;
   float: left;
   width: 43px;
   height: 53px;
-  margin: 85px 0 0 692px;
+  margin-top: 85px;
+  margin-left: 12px;
 }
 .concerts h2 {
   float: left;
@@ -308,8 +317,9 @@ main {
 }
 .concerts button {
   display: block;
-  position: absolute;
-  clear: both;
+  float: left;
+  margin-left: 52px;
+  margin-top: 680px;
   font-family: Roboto-Regular;
   font-size: 16px;
   color: #fff;
@@ -318,8 +328,6 @@ main {
   background-color: #9e005d;
   border: 0px;
   border-radius: 16px;
-  bottom: 106px;
-  left: 745px;
 }
 .concerts button:active {
   outline: none;
@@ -337,12 +345,17 @@ main {
   font-size: 30px;
   background-color: #662d91;
 }
+.organizer .wrapper_org {
+  width: 385px;
+  height: 366px;
+  margin: 0 auto;
+}
 .organizer .baraban {
   display: block;
   float: left;
   width: 53px;
   height: 52px;
-  margin-left: 672px;
+  margin-left: 17px;
   margin-top: 41px;
 }
 .organizer h2 {
@@ -358,7 +371,6 @@ main {
   float: left;
   width: 382px;
   height: 179px;
-  margin-left: 659px;
   margin-top: 48px;
   text-align: center;
   color: #fff;
@@ -514,12 +526,13 @@ footer .good_back {
 }
 footer .end {
   height: 107px;
+  width: 362px;
+  margin: 0 auto;
 }
 footer .end .sax {
   width: 74px;
   height: 128px;
   margin-top: -40px;
-  margin-left: 646px;
   background-image: url('../library/images/service/sax.png');
   background-size: cover;
   float: left;
@@ -531,12 +544,6 @@ footer .end .gb {
   background-image: url('../library/images/service/gobrass.png');
   background-size: cover;
   float: left;
-}
-footer .end p {
-  clear: both;
-  display: block;
-  text-align: center;
-  font-size: 13px;
 }
 footer .GB2017 {
   font-family: Roboto-Light;
