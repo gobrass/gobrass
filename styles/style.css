@@ -82,7 +82,8 @@ header .logo1 {
   background-size: cover;
 }
 header nav {
-  margin-left: 18%;
+  width: 633px;
+  margin: 0 auto;
 }
 header nav ul {
   list-style: none;
@@ -102,7 +103,7 @@ header .tel {
   color: #fff;
   float: right;
   margin-top: 33px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 header .tel .number {
   float: right;
@@ -130,7 +131,6 @@ main {
 .look_video {
   z-index: 1;
   clear: both;
-  height: 956px;
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -191,7 +191,7 @@ main {
 .about_us {
   position: relative;
   z-index: 2;
-  margin: -150px auto 0 auto;
+  margin: 0 auto 0 auto;
   height: 787px;
   display: block;
   max-width: 1700px;
