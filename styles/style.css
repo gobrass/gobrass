@@ -82,8 +82,7 @@ header .logo1 {
   background-size: cover;
 }
 header nav {
-  width: 633px;
-  margin: 0 auto;
+  margin-left: 25%;
 }
 header nav ul {
   list-style: none;
