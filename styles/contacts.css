@@ -1,0 +1,145 @@
+.container {
+	max-width: 1700px;
+	min-width: 1290px;
+	margin: 0 auto;
+	padding: 30px 50px;
+	background-color: #fef3fe;
+	box-sizing: border-box;
+}
+
+.container h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	font-family: Roboto-Regular;
+	font-weight: 400;
+}
+
+.container h3 {
+	font-family: 'CoreRhino85Black';
+	font-weight: 400;
+	font-size: 25px;
+	color: #9e005d;
+}
+
+.contacts p {
+	position: relative;
+}
+
+/* === Форма обратной связи === */
+
+.feedback {
+	height: 500px;
+	font-family: Roboto-Light;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.feedback input {
+	height: 30px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	width: 240px;
+	padding: 0 10px;
+}
+
+.feedback label {
+	display: block;
+	float: left;
+	width: 145px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.feedback textarea {
+	resize: none;
+	padding: 10px 20px 10px 10px;
+	width: 370px;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.feedback input, .feedback textarea {
+	font-family: Roboto-Light;
+	font-size: 15px;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.feedback input:focus, .feedback textarea:focus {
+	outline: none;
+	padding-right: 60px;
+	transition-duration: 0.3s;
+	box-shadow: 0px 0px 5px #ff0000;
+	border-color: #a80000;
+}
+
+.feedback input:focus + .form_hint {
+	display: inline-block;
+}
+
+.feedback input:focus:valid + .form_hint {
+	background-color: #28921f;
+}
+
+.feedback input:focus:valid + .form_hint:before {
+	color: #28921f;
+}
+
+.feedback input:valid, .feedback textarea:valid {
+	box-shadow: 0px 0px 5px #00ff00;
+	border-color: #00a800;
+}
+
+.form_hint {
+	display: none;
+	position: absolute;
+	background-color: #d45252;
+	padding: 3px 5px;
+	font-family: Roboto-Light;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: -2px;
+	margin-left: 7px;
+}
+
+.form_hint:before {
+	content: "\25C0";
+	position: absolute;
+	margin-left: -10px;
+	color: #d45252;
+}
+
+/* === Кнопка === */
+
+	.submit {
+		margin-left: 145px;
+		height: 35px;
+		width: 200px;
+		background-color: #9e005d;
+		border-radius: 15px;
+		border-color: transparent;
+		color: #fff;
+		font-size: 15px;
+		font-family: CoreRhino85Black;
+	}
+
+	.submit:focus {
+		outline: none;
+		background-color: #e244a1;
+	}
+
+	.submit:hover {
+		cursor: pointer;
+		background-color: #e244a1;
+	}
+
+	.submit:active {
+		background-color: #662d91;
+	}
+
+/* === Шильдик с подсказкой === */
+	
