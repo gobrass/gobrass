@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Микс</title>
+	<title>Контакты</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css?vers1.1">
 	<link rel="stylesheet" href="styles/contacts.css">
 </head>
@@ -45,31 +45,56 @@
 				<div class="clr"></div>
 				<h2>Контакты</h2>
 				<div class="contacts">
-					<h3>Напишите нам сейчас</h3>
-					<form class="feedback" action="scripts/contact-form.php" method="post">
+					<div class="contacts_form">
+						<h3>Напишите нам сейчас</h3>
+						<form class="feedback" action="scripts/contact-form.php" method="post">
+							<p>
+								<label for="name">Имя:</label>
+								<input type="text" id="name" name="name" placeholder="Введите ваше имя" required autofocus>
+							</p>
+							<p>
+								<label for="email">E-mail:</label>
+								<input type="email" id="email" name="email" placeholder="Введите электронный адрес" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+								<span class="form_hint">В формате<br>"name@something.com"</span>
+							</p>
+							<p>
+								<label for="number">Телефон:</label>
+								<input type="tel" id="number" name="number" placeholder="Введите номер телефона" required pattern="(\+?\d[- .]*){7,13}">
+								<span class="form_hint">В формате<br>"+7(XXX)XXX-XXXX"</span>
+							</p>
+							<p>
+								<label for="message">Текст сообщения:</label>
+								<textarea type="text" id="message" name="message" required></textarea>
+							</p>
+							<input name="bezspama" type="text" style="display:none" value="">
+							<p>
+								<button class="submit" type="submit">Отправить сообщение</button>
+							</p>
+						</form>
+					</div>
+					<div class="contacts_info">
+						<h3>Связь с нами</h3>
+						<p>							
+							<b>Генеральный директор</b><br><i>+7(966)057-37-87</i>, Дмитрий
+						</p> 
 						<p>
-							<label for="name">Имя:</label>
-							<input type="text" id="name" name="name" placeholder="Введите ваше имя" required autofocus>
+							<b>Директ инстаграмма go_brass</b><br>
+							Почта: <i>gobrass9072015@gmail.com</i><br>
+							WhatsApp: <i>+7(968)564-44-20</i><br>
+							Телеграмм: <i>+7(968)564-44-20</i>
 						</p>
 						<p>
-							<label for="mail">E-mail:</label>
-							<input type="email" id="mail" name="mail" placeholder="Введите электронный адрес" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
-							<span class="form_hint">В формате "name@something.com"</span>
+							<b>Соц сети</b><br>
+							ВКонтакте: <a href="https://vk.com/go_brass" target="_blank">https://vk.com/go_brass</a><br>
+							Инстаграмм: <a href="https://www.instagram.com/go_brass" target="_blank">https://www.instagram.com/go_brass</a><br>
+							ТВИТЕР: <a href="https://twitter.com/Go_Brass" target="_blank">https://twitter.com/Go_Brass</a> <br>
+							Facebook: <a href="https://m.facebook.com/go.brass.5" target="_blank">https://m.facebook.com/go.brass.5</a><br>
 						</p>
 						<p>
-							<label for="number">Телефон:</label>
-							<input type="tel" id="number" name="number" placeholder="Введите номер телефона" required pattern="(\+?\d[- .]*){7,13}">
-							<span class="form_hint">В формате "+7(XXX)XXX-XXXX"</span>
+							<b>Наш официальный хаштег</b><br>#go_brass
 						</p>
-						<p>
-							<label for="message">Текст сообщения:</label>
-							<textarea type="text" id="message" name="message" required></textarea>
-						</p>
-						<input name="bezspama" type="text" style="display:none" value="">
-						<p>
-							<button class="submit" type="submit">Отправить сообщение</button>
-						</p>
-					</form>		
+					</div>
+					<div class="clr"></div>
 				</div>	
 			</div>
 		</main>

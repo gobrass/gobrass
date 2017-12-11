@@ -13,6 +13,7 @@
 	font-size: 30px;
 	font-family: Roboto-Regular;
 	font-weight: 400;
+	margin-bottom: 30px;
 }
 
 .container h3 {
@@ -20,6 +21,7 @@
 	font-weight: 400;
 	font-size: 25px;
 	color: #9e005d;
+	margin-bottom: 5px;
 }
 
 .contacts p {
@@ -141,5 +143,23 @@
 		background-color: #662d91;
 	}
 
-/* === Шильдик с подсказкой === */
-	
+.contacts_form {
+	float: left;
+	width: 610px;
+	border-right: 1px solid #ccc;
+}
+
+.contacts_info {
+	margin-left: 635px;
+	font-family: Roboto-Light;
+	font-size: 18px;
+}
+
+.contacts_info p {
+	margin-bottom: 10px;
+}
+
+.contacts_info i, .contacts_info a {
+	font-style: italic;
+	color: blue;
+}

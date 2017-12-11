@@ -8,15 +8,15 @@ $message = htmlspecialchars($_POST["message"]);
 $bezspama = htmlspecialchars($_POST["bezspama"]);
  
 /* Ваш адрес и тема сообщения */
-$address = "papri9@mail.ru";
+$address = "fdl.mail1@gmail.com";
 $sub = "Gobrass.ru cообщение с сайта";
  
 /* Формат письма */
-$mes = "Сообщение с сайта Gobrass.ru.\n
+$mes = "Сообщение с сайта Gobrass.ru. \n
 Имя отправителя: $name \n
-Электронный адрес отправителя: $email\n
-Телефон отправителя: $number\n
-Текст сообщения:\n
+Электронный адрес отправителя: $email \n
+Телефон отправителя: $number \n
+Текст сообщения: \n
 $message";
  
  
@@ -24,16 +24,16 @@ if (empty($bezspama)) /* Оценка поля bezspama - должно быть 
 {
 /* Отправляем сообщение, используя mail() функцию */
 $from  = "From: $name <$email> \r\n Reply-To: $email \r\n";
-if (mail($address, $sub, $mes, $from)) {
- header('Refresh: 5; URL=http://gobrass.ru/');
+if (mail($address, $sub, $mes)) {
+ header('Refresh: 3; URL=http://gobrass.ru/');
  echo '<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на главную страницу</body>';}
+    <body>Письмо отправлено, через 3 секунд вы вернетесь на главную страницу</body>';}
 else {
- header('Refresh: 5; URL=http://gobrass.ru/');
+ header('Refresh: 3; URL=http://gobrass.ru/');
  echo '<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <body>Письмо не отправлено, через 5 секунд вы вернетесь на главную страницу</body>';}
+    <body>Письмо не отправлено, через 3 секунд вы вернетесь на главную страницу</body>';}
 }
 exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
 ?>
