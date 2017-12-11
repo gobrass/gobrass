@@ -1,0 +1,5 @@
+Host: http://gobrass.ru/
+
+User-agent: *
+Disallow: /etery/
+Disallow: /library/images/service/
